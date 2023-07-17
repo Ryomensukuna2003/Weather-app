@@ -1,4 +1,13 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+
 
 .main_box {
   font-family: "Raleway", sans-serif;
@@ -19,12 +28,10 @@
 
 .min-max {
     display: flex;
+    gap: 1rem;
   }
   
-  .mintemp,
-  .maxtemp {
-    flex: 1;
-  }
+
   
 
 .inputfield {
@@ -38,7 +45,6 @@
   color: #000;
   cursor: pointer;
   display: inline-block;
-  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
@@ -54,10 +60,43 @@
   white-space: nowrap;
 }
 
-
-
 .invalid{
     text-align: center;
     font-size: 30px;
     
+}
+
+
+
+/*     --------------------------------------------------------      */
+.header {
+  width: 100%;
+  border-bottom: 3px solid black;
+  text-align: right;
+  position: relative;
+
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 28px;
+    font-weight: 800;
+    padding: 26px;
+    border-right: 3px solid black;
+  }
+
+.link {
+  display: inline-block;
+  padding: 7px 0;
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f0f0f;
+  font-weight: 800;
+  font-size: 24px;
+
+
 }
